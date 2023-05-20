@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+    <div class="p-3">
+        <form action="/" id="form" class="w-1/4 p-3 m-auto bg-blue-300 rounded-md">
+
+            <h1 class="text-center font-extrabold mb-4 text-white">Registration Form</h1>
+
+            <div id="input-control" class="flex flex-col">
+                <label class="text-black font-bold my-1">نام کاربری:</label>
+                <input type="text" id="username" name="username" class="text-black rounded-md p-1 focus:outline-none">
+                <div id="error" class="text-red-600  my-2 text-[14px]"></div>
+            </div>
+
+            <div id="input-control" class="flex flex-col">
+                <label class="text-black font-bold my-1">ایمیل:</label>
+                <input type="text" id="email" name="email" class=" text-black rounded-md p-1 focus:outline-none">
+                <div id="error" class="text-red-600  my-2 text-[14px]"></div>
+            </div>
+
+            <div id="input-control" class="flex flex-col">
+                <label class="text-black font-bold my-1">رمزعبور:</label>
+                <input type="password" id="password" name="password" class="text-black rounded-md p-1 focus:outline-none">
+                <div id="error" class="text-red-600 my-2 text-[14px]"></div>
+            </div>
+
+            <div id="input-control" class="flex flex-col">
+                <label class="text-black font-bold my-1">تکرار رمز:</label>
+                <input type="password" id="password2" name="password2" class="text-black rounded-md p-1 focus:outline-none">
+                <div id="error" class="text-red-600  my-2 text-[14px]"></div>
+            </div>
+
+            <button type="submit" class="bg-green-600 mt-4 w-full text-white px-3 py-1 rounded-lg">ورود</button>
+        </form>
+
+       
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
